@@ -4,19 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Currency Converter</title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-    <script src="script.js"></script>
+    <header></header>
 </head>
 <body>
     <div class="container">
         <div class="header">
           <h1>Currency Converter</h1>
         </div>
-        <div class="date"></div>
-        <ul class="currencies"></ul>
-        <button class="add-currency-btn"><i class="fas fa-long-arrow-alt-left"></i>Add Currency</button>
-        <ul class="add-currency-list"></ul>
+        <div class="date">2021-07-12</div>
+        <ul class="currencies">
+            <li class="currency" id="USD">
+                <img src="http://www.geonames.org/flags/l/us.gif" class="flag">
+                <div class="info">
+                    <p class="input"><span class="currency-symbol">&#36</span><input placeholder="0.0000"></p>
+                    <p class="currency-name">US Dollar</p>
+                    <p class="base-currency-rate">1 EUR = 1200 USD</p>
+                </div>
+                <span class="close">&times;</span>
+            </li>
+            <li class="currency" id="EUR">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" class="flag">
+                <div class="info">
+                    <p class="input"><span class="currency-symbol">&#36</span><input placeholder="0.0000"></p>
+                    <p class="currency-name">Euro</p>
+                    <p class="base-currency-rate">converter</p>
+                </div>
+                <span class="close">&times;</span>
+            </li>
+        </ul>
+        <button class="add-currency-btn open"><i class="fas fa-long-arrow-alt-left"></i>Add Currency</button>
+        <ul class="add-currency-list">
+            <li data-currency="USD"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" class="flag"><spam>EUR - Euro</spam></li>
+            <li data-currency="USD"><img src="http://www.geonames.org/flags/l/us.gif"><spam>USD - US Dollar</spam></li>
+            <li data-currency="USD"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" class="flag"><spam>USD - US Dollar</spam></li>
+            <li data-currency="USD"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" class="flag"><spam>USD - US Dollar</spam></li>
+        </ul>
       </div>
+      <script src="script.js"></script>
 </body>
 </html>
